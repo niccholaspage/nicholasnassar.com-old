@@ -17,10 +17,13 @@ block content
                 th.mdl-data-table__cell--non-numeric Job
                 th Time
                 th Skills
+                th Experience
         tbody
             each job in jobs
                 tr
-                    td.mdl-data-table__cell--non-numeric=job.job
+                    td.mdl-data-table__cell--non-numeric
+                        a(href=job.link)=job.job
                     td=job.time
                     td=job.skills
+                    td!=job.experience
     p Contact me at #[a(href='mailto:nicholas@nicholasnassar.com') nicholas@nicholasnassar.com]

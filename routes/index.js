@@ -54,8 +54,10 @@ var projects = [{
 
 var jobs = [{
     job: "Oriental Rug Galaxy",
+    link: "http://orientalruggalaxy.com/",
     time: "June 2015 - Now",
-    skills: "Java"
+    skills: "Java, NodeJS, HTML, CSS",
+    experience: "I update five online stores and have created a Java<br>program to automate the inventory updating<br>and exporting across all services."
 }];
 
 /* GET home page. */
