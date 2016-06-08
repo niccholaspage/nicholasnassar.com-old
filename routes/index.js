@@ -44,6 +44,12 @@ var projects = [{
     linkText: "To GitHub!",
     link: "http://github.com/niccholaspage/IMBAbuilds",
     background: "imbabuilds.png"
+}, {
+    title: "Fe",
+    description: "An economy plugin for Minecraft",
+    linkText: "To BukkitDev!",
+    link: "http://dev.bukkit.org/bukkit-plugins/fe-economy",
+    background: ""
 }];
 
 var jobs = [{
