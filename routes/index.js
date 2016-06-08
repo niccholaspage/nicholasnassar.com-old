@@ -49,7 +49,7 @@ var projects = [{
     description: "An economy plugin for Minecraft",
     linkText: "To BukkitDev!",
     link: "http://dev.bukkit.org/bukkit-plugins/fe-economy",
-    background: ""
+    background: "fe.png"
 }];
 
 var jobs = [{

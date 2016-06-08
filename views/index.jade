@@ -1,7 +1,7 @@
 extends layout
 
 block content
-    p Welcome to my website! Here are some of my projects:
+    h2 Projects
     #grid.mdl-grid
         each project in projects
             .mdl-cell.mdl-cell--3-col
@@ -11,6 +11,7 @@ block content
                     .mdl-card__supporting-text=project.description
                     .mdl-card__actions.mdl-card--border
                         a(href=project.link).mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect=project.linkText
+    h2 Jobs
     table#jobs.mdl-data-table.mdl-js-data-table.mdl-shadow--2dp
         thead
             tr
@@ -26,4 +27,5 @@ block content
                     td=job.time
                     td=job.skills
                     td!=job.experience
+    h2 Contact Info
     p Contact me at #[a(href='mailto:nicholas@nicholasnassar.com') nicholas@nicholasnassar.com]
