@@ -4,28 +4,31 @@ block content
     h2 Projects
     #grid.mdl-grid
         each project in projects
-            .mdl-cell.mdl-cell--3-col
-                .project-card-square.mdl-card.mdl-shadow--2dp
-                    .mdl-card__title.mdl-card--expand(id=project.title, style='background-image: url(\'images/' + project.background + '\'')
-                        h2.mdl-card__title-text=project.title
-                    .mdl-card__supporting-text=project.description
-                    .mdl-card__actions.mdl-card--border
-                        a(href=project.link).mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect=project.linkText
-    h2 Jobs
+            if project.spacing
+                .mdl-cell.mdl-cell--3-col
+            else
+                .mdl-cell.mdl-cell--3-col
+                    .project-card-square.mdl-card.mdl-shadow--2dp
+                        .mdl-card__title.mdl-card--expand(id=project.title, style='background-image: url(\'images/' + project.background + '\'')
+                            h2.mdl-card__title-text=project.title
+                        .mdl-card__supporting-text=project.description
+                        .mdl-card__actions.mdl-card--border
+                            a(href=project.link).mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect=project.linkText
+    h2 Work Experience
     table#jobs.mdl-data-table.mdl-js-data-table.mdl-shadow--2dp
         thead
             tr
-                th.mdl-data-table__cell--non-numeric Job
+                th.mdl-data-table__cell--non-numeric Organization
                 th Time
                 th Skills
-                th Experience
+                th Details
         tbody
             each job in jobs
                 tr
                     td.mdl-data-table__cell--non-numeric
-                        a(href=job.link)=job.job
+                        a(href=job.link)=job.name
                     td=job.time
                     td=job.skills
                     td!=job.experience
     h2 Contact Info
-    p Contact me at #[a(href='mailto:nicholas@nicholasnassar.com') nicholas@nicholasnassar.com]
+    p Email me at #[a(href='mailto:nicholas@nicholasnassar.com') nicholas@nicholasnassar.com]
