@@ -60,7 +60,7 @@ var projects = [
         background: "imbabuilds.png"
     },
     {
-        spacing: true  
+        spacing: true
     },
     {
         title: "Fe",
