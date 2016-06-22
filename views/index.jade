@@ -29,6 +29,6 @@ block content
                         a(href=job.link)=job.name
                     td=job.time
                     td=job.skills
-                    td!=job.experience
+                    td.job_details=job.experience
     h2 Contact Info
     p Email me at #[a(href='mailto:nicholas@nicholasnassar.com') nicholas@nicholasnassar.com]
