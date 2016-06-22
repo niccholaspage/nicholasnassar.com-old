@@ -91,7 +91,7 @@ var jobs = [
         link: "http://orientalruggalaxy.com/",
         time: "June 2015 - Now",
         skills: "Java, NodeJS, HTML, CSS",
-        experience: "I manage five online stores and have created a Java<br>program to automate the inventory updating<br>and exporting across all services."
+        experience: "I manage five online stores and have created a Java program to automate the inventory updating and exporting across all services."
     }
 ];
 
