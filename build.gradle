@@ -13,3 +13,11 @@ dependencies {
     compile 'io.vertx:vertx-web:3.3.2'
     compile 'io.vertx:vertx-web-templ-jade:3.3.2'
 }
+
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Main-Class': 'com.nicholasnassar.website.WebHandler'
+    }
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
