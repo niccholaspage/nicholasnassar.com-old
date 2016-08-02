@@ -1,6 +1,8 @@
 extends layout
 
 block content
+    h2 Welcome
+    p Welcome to my website! You can find all of my big projects and work experience here.
     h2 Projects
     #grid.mdl-grid
         each project in context.projects
@@ -30,5 +32,4 @@ block content
                     td=job.getTime()
                     td=job.getSkills()
                     td.job_details=job.getExperience()
-    h2 Contact Info
-    p Email me at #[a(href='mailto:nicholas@nicholasnassar.com') nicholas@nicholasnassar.com]
+    br

@@ -70,6 +70,7 @@ public class WebHandler {
         Router router = Router.router(vertx);
 
         router.get("/").handler(ctx -> renderWithJade(ctx, "index"));
+        router.get("/contact").handler(ctx -> renderWithJade(ctx, "contact"));
 
         router.route().handler(StaticHandler.create("web"));
 

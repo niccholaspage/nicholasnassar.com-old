@@ -32,3 +32,9 @@
     word-wrap: break-word;
     white-space: normal;
 }
+
+#github {
+    margin: 0 auto;
+    width: 220px;
+    height: 30px;
+}

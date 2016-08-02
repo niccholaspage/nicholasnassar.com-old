@@ -28,6 +28,13 @@
     "background": "thespookydungeon.png"
   },
   {
+    "title": "Fe",
+    "description": "An economy plugin for Minecraft",
+    "linkText": "To BukkitDev!",
+    "link": "http://dev.bukkit.org/bukkit-plugins/fe-economy",
+    "background": "fe.png"
+  },
+  {
     "title": "Music Bot",
     "description": "A Teamspeak music bot written in Java with the Spark framework",
     "linkText": "To GitHub!",
@@ -54,15 +61,5 @@
     "linkText": "To GitHub!",
     "link": "http://github.com/niccholaspage/IMBAbuilds",
     "background": "imbabuilds.png"
-  },
-  {
-    "spacing": true
-  },
-  {
-    "title": "Fe",
-    "description": "An economy plugin for Minecraft",
-    "linkText": "To BukkitDev!",
-    "link": "http://dev.bukkit.org/bukkit-plugins/fe-economy",
-    "background": "fe.png"
   }
 ]
