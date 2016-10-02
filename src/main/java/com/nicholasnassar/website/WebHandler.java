@@ -69,7 +69,14 @@ public class WebHandler {
 
         Router router = Router.router(vertx);
 
-        router.get("/").handler(ctx -> renderWithJade(ctx, "index"));
+        router.get("/").handler(ctx -> {
+            ctx.put("projects", projects);
+
+            ctx.put("jobs", jobs);
+
+            renderWithJade(ctx, "index");
+        });
+
         router.get("/contact").handler(ctx -> renderWithJade(ctx, "contact"));
 
         router.route().handler(StaticHandler.create("web"));
@@ -86,8 +93,6 @@ public class WebHandler {
     private void renderWithJade(RoutingContext ctx, String template, String page) {
         ctx.put("title", page == null ? websiteName : page + " - " + websiteName);
         ctx.put("websiteName", websiteName);
-        ctx.put("projects", projects);
-        ctx.put("jobs", jobs);
 
         jade.render(ctx, "templates/" + template, res -> {
             if (res.succeeded()) {
