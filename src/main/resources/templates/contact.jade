@@ -1,6 +1,12 @@
 extends layout
 
 block content
-    h2 Contact Info
-    p Email me at #[a(href='mailto:nicholas@nicholasnassar.com') nicholas@nicholasnassar.com]
-    iframe#github(src='https://ghbtns.com/github-btn.html?user=niccholaspage&type=follow&count=false&size=large', frameborder='0', scrolling='0')
+    .mdl-grid.portfolio-max-width.portfolio-contact
+        .mdl-cell.mdl-cell--12-col.mdl-card.mdl-shadow--4dp
+            .mdl-card__title
+                h2.mdl-card__title-text Contact
+            .mdl-card__supporting-text
+                p Email me at #[a(href='mailto:nicholas@nicholasnassar.com') nicholas@nicholasnassar.com]
+                a.github-button(href='https://github.com/niccholaspage', data-size='large', aria-label='Follow @niccholaspage on GitHub') Follow @niccholaspage
+block endscripts
+    script(async, defer, src='https://buttons.github.io/buttons.js')

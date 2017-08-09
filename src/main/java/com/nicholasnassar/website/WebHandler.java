@@ -26,7 +26,7 @@ public class WebHandler {
 
     private final List<Job> jobs;
 
-    private WebHandler() {
+    public WebHandler(RoutingExtras extras) {
         vertx = Vertx.vertx();
 
         jade = JadeTemplateEngine.create();
@@ -41,12 +41,8 @@ public class WebHandler {
             for (Object object : array) {
                 JsonObject json = (JsonObject) object;
 
-                if (json.getBoolean("spacing", false)) {
-                    projects.add(new Project(null, null, null, null, null, true));
-                } else {
-                    projects.add(new Project(json.getString("title"), json.getString("description"),
-                            json.getString("linkText"), json.getString("link"), json.getString("background"), false));
-                }
+                projects.add(new Project(json.getString("title"), json.getString("description"),
+                        json.getString("linkText"), json.getString("link"), json.getString("background")));
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -79,22 +75,38 @@ public class WebHandler {
 
         router.get("/contact").handler(ctx -> renderWithJade(ctx, "contact"));
 
+        if (extras != null) {
+            extras.setupRoutes(this, vertx, router);
+        }
+
         router.route().handler(StaticHandler.create("web"));
 
         vertx.createHttpServer().requestHandler(router::accept).listen(3000);
 
         System.out.println("Website started!");
+
+        Scanner scanner = new Scanner(System.in);
+
+        String line;
+
+        while ((line = scanner.nextLine()) != null) {
+            if (line.equals("stop")) {
+                break;
+            }
+        }
+
+        stop();
     }
 
-    private void renderWithJade(RoutingContext ctx, String template) {
+    public void renderWithJade(RoutingContext ctx, String template) {
         renderWithJade(ctx, template, null);
     }
 
-    private void renderWithJade(RoutingContext ctx, String template, String page) {
+    public void renderWithJade(RoutingContext ctx, String template, String page) {
         ctx.put("title", page == null ? websiteName : page + " - " + websiteName);
         ctx.put("websiteName", websiteName);
 
-        jade.render(ctx, "templates/" + template, res -> {
+        jade.render(ctx, "templates/", template, res -> {
             if (res.succeeded()) {
                 ctx.response().putHeader(HttpHeaders.CONTENT_TYPE, "text/html").end(res.result());
             } else {
@@ -110,18 +122,6 @@ public class WebHandler {
     }
 
     public static void main(String[] args) {
-        WebHandler handler = new WebHandler();
-
-        Scanner scanner = new Scanner(System.in);
-
-        String line;
-
-        while ((line = scanner.nextLine()) != null) {
-            if (line.equals("stop")) {
-                break;
-            }
-        }
-
-        handler.stop();
+        new WebHandler(null);
     }
 }

@@ -3,9 +3,7 @@ package com.nicholasnassar.website;
 public class Project {
     private final String title, description, linkText, link, background;
 
-    private final boolean spacing;
-
-    public Project(String title, String description, String linkText, String link, String background, boolean spacing) {
+    public Project(String title, String description, String linkText, String link, String background) {
         this.title = title;
 
         this.description = description;
@@ -15,8 +13,6 @@ public class Project {
         this.link = link;
 
         this.background = background;
-
-        this.spacing = spacing;
     }
 
     public String getTitle() {
@@ -37,9 +33,5 @@ public class Project {
 
     public String getBackground() {
         return background;
-    }
-
-    public boolean isSpacing() {
-        return spacing;
     }
 }

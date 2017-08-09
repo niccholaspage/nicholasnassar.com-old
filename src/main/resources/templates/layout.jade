@@ -3,26 +3,39 @@ html(lang='en')
     head
         meta(charset='utf-8')
         meta(http-equiv='X-UA-Compatible', content='IE=edge')
-        meta(name='viewport', content='width=device-width, initial-scale=1')
-        meta(name='description', content='')
-        meta(name='author', content='')
-        link(rel='icon', href='/favicon.ico')
-        title=context.title
-        link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
-        link(href='https://code.getmdl.io/1.1.3/material.blue-indigo.min.css', rel='stylesheet')
-        link(href='/assets/css/style.css', rel='stylesheet')
-        script(src='https://code.jquery.com/jquery-1.11.3.min.js', integrity='sha256-7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g=', crossorigin='anonymous')
-        script(defer, src='https://code.getmdl.io/1.1.3/material.min.js')
+        meta(name='description', content='Nicholas Nassar&#39;s portfolio')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0')
+        title Nicholas Nassar
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en')
+        link(rel='stylesheet', href='https://code.getmdl.io/1.3.0/material.deep_purple-blue.min.css')
+        link(rel='stylesheet', href='/assets/css/styles.css')
+        link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
         script(src='/assets/js/base.js')
-        block scripts
     body
         .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
-            header.mdl-layout__header
-                .mdl-layout__header-row
-                    span.mdl-layout-title=context.websiteName
-                nav.mdl-navigation
-                    a(href='/').mdl-layout__tab Home
-                    a(href='/contact').mdl-layout__tab Contact
+            header.mdl-layout__header.mdl-layout__header--waterfall.portfolio-header
+                .mdl-layout__header-row.portfolio-logo-row
+                    span.mdl-layout__title
+                        .portfolio-logo
+                        span.mdl-layout__title Nicholas Nassar
+                .mdl-layout__header-row.portfolio-navigation-row.mdl-layout--large-screen-only
+                    nav.mdl-navigation.mdl-typography--body-1-force-preferred-font
+                        a.mdl-navigation__link(href='/') Portfolio
+                        a.mdl-navigation__link(href='/contact') Contact
+            .mdl-layout__drawer.mdl-layout--small-screen-only
+                nav.mdl-navigation.mdl-typography--body-1-force-preferred-font
+                    a.mdl-navigation__link(href='/') Portfolio
+                    a.mdl-navigation__link(href='/contact') Contact
             main.mdl-layout__content
-                .page-content
-                    block content
+                block content
+                footer.mdl-mini-footer
+                    .mdl-mini-footer__left-section
+                        .mdl-logo Nicholas Nassar
+                    .mdl-mini-footer__right-section
+                        // ul.mdl-mini-footer__link-list
+                            li
+                                a(href='#') Help
+                            li
+                                a(href='#') Privacy & Terms
+        script(src='https://code.getmdl.io/1.3.0/material.min.js')
+        block endscripts

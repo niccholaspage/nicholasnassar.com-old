@@ -4,13 +4,20 @@
     "link": "http://www.kidsunlimitedtoledo.org/",
     "time": "January 2016 - May 2016",
     "skills": "Tutoring",
-    "experience": "I tutored students from Kindergarden through 8th grade for two hours every week."
+    "experience": "I tutored students from Kindergarten through 8th grade for two hours every week."
+  },
+  {
+    "name": "Sylvania Area Family Services",
+    "link": "http://sylvaniaareafamilyservices.org/",
+    "time": "February 2017 - April 2017",
+    "skills": "Tutoring, manual labor (change this this sounds kind of bad?)",
+    "experience": "I tutored students as well as performed tasks like stacking pantries and stuff?"
   },
   {
     "name": "Oriental Rug Galaxy",
     "link": "http://orientalruggalaxy.com/",
     "time": "June 2015 - Now",
-    "skills": "Java, NodeJS, HTML, CSS",
+    "skills": "Java, HTML, CSS, Javascript, Magento",
     "experience": "I manage five online stores and have created a Java program to automate the inventory updating and exporting across all services."
   }
 ]

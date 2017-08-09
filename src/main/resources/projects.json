@@ -1,28 +1,35 @@
 [
   {
+    "title": "SFS App & API",
+    "description": "An unofficial app that allowed students to check their grades in an easy and intuitive way compared to the TeacherEase website, as well as the server side API to retrieve the info.",
+    "linkText": "To the API!",
+    "link": "https://github.com/niccholaspage/SFSAPI",
+    "background": "sfs.png"
+  },
+  {
     "title": "InfiniGrow",
-    "description": "An endless runner where you try to escape sheeple - Welcome to InfiniGrow!",
+    "description": "An endless runner for Windows and Android where you try to escape sheeple. Created in three days using GameMaker: Studio for Ludum Dare 34 and made it into the top 1000 overall!",
     "linkText": "Take me to Ludum Dare!",
     "link": "http://ludumdare.com/compo/ludum-dare-34/?action=preview&uid=3502",
     "background": "infinigrow.png"
   },
   {
     "title": "nPlay",
-    "description": "A website that allows you to watch videos together with friends",
-    "linkText": "To the website!",
-    "link": "http://nplay.me",
+    "description": "A website that at one point allowed users to watch videos together on YouTube and other video streaming services. nPlay utilized the Spark framework and Pug.",
+    "linkText": "To GitHub!",
+    "link": "https://github.com/niccholaspage/nPlay",
     "background": "nplay.png"
   },
   {
     "title": "nNinja",
-    "description": "A sweet Ninja game that is in the works",
+    "description": "A sweet Ninja platformer that was in the works, featuring tile-based levels and a fully functional level editor.",
     "linkText": "Let me download it!",
     "link": "http://nninja.xyz",
     "background": "nninja.png"
   },
   {
     "title": "The Spooky Dungeon",
-    "description": "A revolutionary graphical RPG with multiplayer and a lot of text!",
+    "description": "A revolutionary graphical RPG with online multiplayer and an incredibly large amount of text! This game was created for an AP Computer Science course and updated after submission with additional features.",
     "linkText": "Take me to the website!",
     "link": "http://thespookydungeon.com/",
     "background": "thespookydungeon.png"
@@ -43,10 +50,10 @@
   },
   {
     "title": "nicholasnassar.com",
-    "description": "The website you are currently on! Created with Java, Vert.x, and Pug.",
+    "description": "The website you are currently on! Uses Java, Vert.x, and Pug as well as Material Design Lite so everything looks good.",
     "linkText": "The GitHub Project",
     "link": "https://github.com/niccholaspage/nicholasnassar.com",
-    "background": "../../favicon.ico"
+    "background": "website.png"
   },
   {
     "title": "nRPG",
