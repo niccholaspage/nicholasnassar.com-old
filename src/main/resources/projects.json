@@ -36,7 +36,7 @@
   },
   {
     "title": "Fe",
-    "description": "An economy plugin for Minecraft",
+    "description": "An economy plugin for Minecraft! Fe supported SQLite and MySQL database engines and implemented the Vault API to seamlessly integrate with other plugins.",
     "linkText": "To BukkitDev!",
     "link": "http://dev.bukkit.org/bukkit-plugins/fe-economy",
     "background": "fe.png"
