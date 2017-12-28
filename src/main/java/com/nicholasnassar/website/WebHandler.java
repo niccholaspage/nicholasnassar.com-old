@@ -74,7 +74,7 @@ public class WebHandler {
             renderWithJade(ctx, "index");
         });
 
-        router.get("/contact").handler(ctx -> renderWithJade(ctx, "contact"));
+        router.get("/contact").handler(ctx -> renderWithJade(ctx, "contact", "Contact"));
 
         if (extras != null) {
             extras.setupRoutes(this, vertx, router);
