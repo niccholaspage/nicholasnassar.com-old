@@ -2,6 +2,7 @@ package com.nicholasnassar.website;
 
 import io.vertx.core.Vertx;
 import io.vertx.core.http.HttpHeaders;
+import io.vertx.core.http.HttpServerOptions;
 import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
 import io.vertx.ext.web.Router;
@@ -81,7 +82,11 @@ public class WebHandler {
 
         router.route().handler(StaticHandler.create("web"));
 
-        vertx.createHttpServer().requestHandler(router::accept).listen(3000);
+        HttpServerOptions options = new HttpServerOptions();
+
+        options.setCompressionSupported(true);
+
+        vertx.createHttpServer(options).requestHandler(router::accept).listen(3000);
 
         System.out.println("Website started!");
 
