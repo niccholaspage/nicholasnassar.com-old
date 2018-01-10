@@ -80,7 +80,7 @@ public class WebHandler {
             extras.setupRoutes(this, vertx, router);
         }
 
-        router.route().handler(StaticHandler.create("web"));
+        router.route().handler(StaticHandler.create("web").setMaxAgeSeconds(604800));
 
         HttpServerOptions options = new HttpServerOptions();
 
