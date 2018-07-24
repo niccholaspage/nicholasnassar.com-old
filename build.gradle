@@ -10,9 +10,9 @@ repositories {
 }
 
 dependencies {
-    compile 'io.vertx:vertx-web:3.5.0'
-    compile 'io.vertx:vertx-web-templ-jade:3.5.0'
-    compile 'io.vertx:vertx-web-client:3.5.0'
+    compile 'io.vertx:vertx-web:3.5.3'
+    compile 'io.vertx:vertx-web-templ-jade:3.5.3'
+    compile 'io.vertx:vertx-web-client:3.5.3'
 }
 
 task fatJar(type: Jar) {
