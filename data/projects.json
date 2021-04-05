@@ -1,0 +1,14 @@
+[
+    {
+        "name": "[DSL Builder](https://github.com/niccholaspage/dsl-builder)",
+        "language": "Kotlin",
+        "description": "DSL Builder is a compile-time dependency that automatically generates domain-specific languages based on annotations attached to Kotlin classes and properties. By using Google’s Kotlin Symbol Processing API to hook into the Kotlin compiler, DSL Builder can process program source code and generate builders in Kotlin code for annotated classes utilizing Square’s KotlinPoet library. Using DSL Builder reduced boilerplate code by 95% in a dependent project through removal of repetitive DSL code. On every commit of DSL Builder, GitHub Actions automatically builds and publishes updated Maven packages.",
+        "sample": "```kotlin\n@GenerateBuilder\nclass Person(val firstName: String, val lastName: String, val pet: Pet)\n\n@GenerateBuilder\nopen class Pet(val name: String, val breed: String)\n\nfun main() {\n    val person = PersonBuilder().apply {\n        firstName = \"Nicholas\"\n        lastName = \"Nassar\"\n\n        pet {\n            name = \"ZuZu\"\n            breed = \"Yorkie\"\n        }\n    }.build()\n}"
+    },
+    {
+        "name": "Aloy the Discord Bot",
+        "language": "Javascript",
+        "description": "A Discord bot built to remind students about upcoming classes, play and queue videos from YouTube in voice channels, check stock prices, and bank and gamble with fake currency. Built using [discord.js](https://discord.js.org/#/) and [ytdl-core](https://www.npmjs.com/package/ytdl-core).",
+        "image": "/images/bot.png"
+    }
+]
