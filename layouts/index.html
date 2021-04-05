@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="container">
-    <div class="p-3 pb-md-4 mx-auto text-center">
+    <div class="p-3 pb-md-4 mx-auto text-center border-bottom">
         <h1 class="display-4 fw-normal">Nicholas Nassar</h1>
         <p class="fs-5 text-muted">University of Toledo '21, Computer Science and Engineering</p>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
@@ -18,9 +18,9 @@
         <span><a href="mailto:nicholas@nicholasnassar.com">nicholas@nicholasnassar.com</a></span>
     </div>
 
-    <div class="row">
+    <div class="row pt-2">
         <div class="col">
-            <h1 class="display-5 text-center pt-5">About</h1>
+            <h1 class="display-5 text-center">About</h1>
             <p>Hello, my name is Nicholas Nassar and I'm currently studying Computer Science and Engineering at the
                 University
                 of Toledo! My interest in programming started in 2010 when I decided to learn Java to create
@@ -32,7 +32,7 @@
                 well as internal company applications.</p>
         </div>
         <div class="col offset-md-1">
-            <h1 class="display-5 text-center pt-5">Skills at a Glance</h1>
+            <h1 class="display-5 text-center">Skills at a Glance</h1>
             <div class="row">
                 <div class="col">
                     <p>Proficient:</p>
@@ -47,22 +47,20 @@
                 <div class="col">
                     <p>Experienced:</p>
                     <ul>
-                        <li>C++</li>
-                        <li>C</li>
+                        <li>Vue</li>
                         <li>HTML</li>
                         <li>CSS</li>
+                        <li>Hugo</li>
                     </ul>
                 </div>
                 <div class="col">
                     <p>Familiar:</p>
                     <ul>
+                        <li>C++ & C</li>
                         <li>Android</li>
                         <li>Flutter</li>
-                        <li>Hugo</li>
                         <li>SQL</li>
-                        <li>PHP</li>
                         <li>Docker</li>
-                        <li>Vue & React</li>
                     </ul>
                 </div>
             </div>
@@ -70,7 +68,7 @@
     </div>
     <h1 class="display-5 text-center pt-5">Work Experience</h1>
     {{ range .Site.Data.experience }}
-    <p>{{ .role }} at {{ .company }}</p>
+    <h3>{{ .role }} at {{ .company }}</h3>
     {{ if .tagline }}
     <p>{{ .tagline | markdownify }}</p>
     {{ end }}
@@ -82,15 +80,21 @@
     </ul>
     {{ end }}
     <h1 class="display-5 text-center pt-5">Projects</h1>
+    <style>
+        pre {
+            border: 1px solid #6c757d !important;
+            padding-left: 5px;
+        }
+    </style>
     {{ range .Site.Data.projects }}
-    <div class="row">
+    <div class="row pb-2">
         <div class="col">
             <h2>{{ .name | markdownify }} ({{ .language }})</h2>
             <p>{{ .description | markdownify }}</p>
         </div>
         <div class="col">
             {{ if .sample }}
-            <p>{{ .sample | markdownify }}</p>
+            {{ .sample | markdownify }}
             {{ else }}
             <img src="{{ .image }}" class="img-fluid">
             {{ end }}

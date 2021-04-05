@@ -3,9 +3,8 @@
         "role": "Software Engineer",
         "company": "Oriental Rug Gallery",
         "time": "June 2015 - Present",
-        "tagline": "Online Store ([www.orientalruggalaxy.com](https://www.orientalruggalaxy.com/))",
         "points": [
-            "Installed, configured, and maintain an e-commerce website for almost 9,000 products utilizing Magento 2, MariaDB, Elasticsearch, Redis, and Varnish.",
+            "Installed, configured, and maintain an [e-commerce website](https://www.orientalruggalaxy.com/) for almost 9,000 products utilizing Magento 2, MariaDB, Elasticsearch, Redis, and Varnish.",
             "Programmed and update a backend Kotlin application to facilitate automatic inventory updating across seven retailers, including eBay, Amazon, Wayfair, Houzz, and Overstock.",
             "Keep applications on cloud servers up to date and free from vulnerabilities and utilize Docker to containerize custom applications.",
             "Create product exporters to add new inventory to online retailers and update details and pricing for existing items.",
@@ -16,7 +15,6 @@
         "role": "IS Co-Op",
         "company": "Plastic Technologies, Inc",
         "time": "January 2019 - Present",
-        "tagline": "",
         "points": [
             "Developed and maintained all-in-one database application for design department’s management of drawings and tooling.",
             "Created a C++ plugin for Claris FileMaker embedding a Chromium instance utilizing the CEF framework to allow for responsive interfaces and new features traditionally unavailable in FileMaker.",
