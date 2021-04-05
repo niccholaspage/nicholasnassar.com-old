@@ -19,7 +19,7 @@
     </div>
 
     <div class="row pt-2">
-        <div class="col">
+        <div class="col-md">
             <h1 class="display-5 text-center">About</h1>
             <p>Hello, my name is Nicholas Nassar and I'm currently studying Computer Science and Engineering at the
                 University
@@ -31,7 +31,7 @@
                 as
                 well as internal company applications.</p>
         </div>
-        <div class="col offset-md-1">
+        <div class="col-md offset-md-1">
             <h1 class="display-5 text-center">Skills at a Glance</h1>
             <div class="row">
                 <div class="col">
@@ -88,11 +88,11 @@
     </style>
     {{ range .Site.Data.projects }}
     <div class="row pb-2">
-        <div class="col">
+        <div class="col-md">
             <h2>{{ .name | markdownify }} ({{ .language }})</h2>
             <p>{{ .description | markdownify }}</p>
         </div>
-        <div class="col">
+        <div class="col-md">
             {{ if .sample }}
             {{ .sample | markdownify }}
             {{ else }}
