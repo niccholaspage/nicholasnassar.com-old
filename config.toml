@@ -2,3 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Nicholas Nassar"
 disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[markup]
+      [markup.highlight]
+            style = "dracula"
