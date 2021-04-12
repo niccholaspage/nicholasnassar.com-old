@@ -4,10 +4,10 @@
         "company": "Oriental Rug Gallery",
         "time": "June 2015 - Present",
         "points": [
-            "Installed, configured, and maintain an [e-commerce website](https://www.orientalruggalaxy.com/) for almost 9,000 products utilizing Magento 2, MariaDB, Elasticsearch, Redis, and Varnish.",
-            "Programmed and update a backend Kotlin application to facilitate automatic inventory updating across seven retailers, including eBay, Amazon, Wayfair, Houzz, and Overstock.",
-            "Keep applications on cloud servers up to date and free from vulnerabilities and utilize Docker to containerize custom applications.",
-            "Create product exporters to add new inventory to online retailers and update details and pricing for existing items.",
+            "Installed, configured, and maintained an [e-commerce website](https://www.orientalruggalaxy.com/) for almost 9,000 products utilizing Magento 2, MariaDB, Elasticsearch, Redis, and Varnish, generating a yearly revenue of $62,000 in 2020.",
+            "Programmed and updated a backend Kotlin application to facilitate automatic inventory updating across seven retailers, including eBay, Amazon, Wayfair, Houzz, and Overstock. Revenue increased 37.82% year after launch, a net increase of $563,000.",
+            "Utilized Docker to containerize apps easing updates, providing greater isolation and protection from vulnerabilities.",
+            "Created product exporters to add new inventory to online retailers and update details and pricing for existing items.",
             "Leveraged knowledge in Git, PHP, Linux, and programmed in Kotlin using IntelliJ IDEA."
         ]
     },
