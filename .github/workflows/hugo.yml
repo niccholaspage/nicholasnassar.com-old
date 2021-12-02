@@ -1,6 +1,3 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
 name: Hugo Build
 
 on:
@@ -13,6 +10,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - run: wget -O hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.82.0/hugo_0.82.0_Linux-64bit.tar.gz
+    - run: wget -O hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.89.4/hugo_0.89.4_Linux-64bit.tar.gz
     - run: tar -xf hugo.tar.gz
     - run: ./hugo
