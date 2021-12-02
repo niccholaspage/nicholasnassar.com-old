@@ -4,17 +4,28 @@
         "company": "Oriental Rug Gallery",
         "time": "June 2015 - Present",
         "points": [
-            "Installed, configured, and maintained an [e-commerce website](https://www.orientalruggalaxy.com/) for almost 9,000 products utilizing Magento 2, MariaDB, Elasticsearch, Redis, and Varnish, generating a yearly revenue of $62,000 in 2020.",
-            "Programmed and updated a backend Kotlin application to facilitate automatic inventory updating across seven retailers, including eBay, Amazon, Wayfair, Houzz, and Overstock. Revenue increased 37.82% year after launch, a net increase of $563,000.",
+            "Installed, configured, maintained, and wrote custom addons for an [e-commerce website](https://www.orientalruggalaxy.com/) with over 14,000 products utilizing Magento 2, MariaDB, Elasticsearch, Redis, and Varnish, generating $122,000 in sales for 2021.",
+            "Programmed and updated a backend Kotlin application to facilitate automatic inventory updating across seven retailers, including eBay, Amazon, Wayfair, Houzz, and Overstock. Revenue increased 37.82% year after launch, a net increase of $563,000",
             "Utilized Docker to containerize apps easing updates, providing greater isolation and protection from vulnerabilities.",
             "Created product exporters to add new inventory to online retailers and update details and pricing for existing items.",
-            "Leveraged knowledge in Git, PHP, Linux, and programmed in Kotlin using IntelliJ IDEA."
+            "Leveraged knowledge in Git, PHP, Linux, Kotlin, HTML, CSS, JavaScript, TypeScript, and the IntelliJ IDEA."
+        ]
+    },
+    {
+        "role": "Frontend Developer",
+        "company": "Excel Impact",
+        "time": "October 2021 - Present",
+        "points": [
+            "Co-created, programmed, and updated web applications with other engineers through participation in an agile development process utilizing React, JS, PHP, HTML, CSS, and Webpack.",
+            "Performed and analyzed systems and debugged, tested, and documented systems to keep them well tested, extensible, maintainable, and secure.",
+            "Developed solutions that worked on all browsers and maintained and developed automated CI/CD pipelines.",
+            "Leveraged knowledge in Git, PHP, React, HTML, CSS, and JavaScript."
         ]
     },
     {
         "role": "Information Systems Co-Op",
         "company": "Plastic Technologies, Inc",
-        "time": "January 2019 - Present",
+        "time": "January 2019 - October 2021",
         "points": [
             "Developed and maintained all-in-one database application for design department’s management of drawings and tooling.",
             "Created a C++ plugin for Claris FileMaker embedding a Chromium instance utilizing the CEF framework to allow for responsive interfaces and new features traditionally unavailable in FileMaker.",
